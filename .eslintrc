@@ -1,0 +1,44 @@
+{
+    "env": {
+        "node": true,
+        "mocha": true,
+        "es6": true,
+        "browser": true
+    },
+    "extends": "standard",
+    "rules": {
+        "no-trailing-spaces": [
+            "error"
+        ],
+        "comma-dangle": [
+            "error",
+            "always-multiline"
+        ],
+        "indent": [
+            "error",
+            4
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error",
+        "react/prefer-es6-class": "error",
+        "react/no-will-update-set-state": "error",
+        "react/no-unused-prop-types": "error",
+        "react/no-redundant-should-component-update": "warn",
+        "react/no-deprecated": "warn",
+        "react/prop-types": "warn",
+        "react/no-danger": "warn"
+        // "react/require-optimization": "warn"
+    },
+    "plugins": [
+        "react"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    }
+}
