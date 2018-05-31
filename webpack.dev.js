@@ -13,24 +13,10 @@ module.exports = Merge(CommonConfig, {
             index: 'index.html',
         },
     },
+    output: {
+        sourceMapFilename: '[name].[hash].map',
+    },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
     ],
-    optimization: {
-        minimize: false,
-        runtimeChunk: {
-            name: 'vendor',
-        },
-        splitChunks: {
-            cacheGroups: {
-                default: false,
-                commons: {
-                    test: /node_modules/,
-                    name: 'vendor',
-                    chunks: 'initial',
-                    minSize: 1,
-                },
-            },
-        },
-    },
 });
