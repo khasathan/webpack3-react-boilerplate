@@ -31,7 +31,6 @@
         "react/no-deprecated": "warn",
         "react/prop-types": "warn",
         "react/no-danger": "warn"
-        // "react/require-optimization": "warn"
     },
     "plugins": [
         "react"

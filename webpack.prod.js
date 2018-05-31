@@ -11,17 +11,6 @@ module.exports = Merge(CommonConfig, {
             minimize: true,
             debug: false,
         }),
-        new webpack.optimize.UglifyJsPlugin({
-            beautify: false,
-            mangle: {
-                screw_ie8: true,
-                keep_fnames: true,
-            },
-            compress: {
-                screw_ie8: true,
-            },
-            comments: false,
-        }),
     ],
     optimization: {
         minimize: true,
@@ -30,7 +19,7 @@ module.exports = Merge(CommonConfig, {
         },
         splitChunks: {
             cacheGroups: {
-                default: true,
+                default: false,
                 commons: {
                     test: /node_modules/,
                     name: 'vendor',
