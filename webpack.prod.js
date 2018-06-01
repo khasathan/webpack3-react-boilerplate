@@ -18,11 +18,12 @@ module.exports = Merge(CommonConfig, {
             name: 'vendor',
         },
         splitChunks: {
+            chunks: 'all',
             cacheGroups: {
                 commons: {
                     test: /[\\/]node_modules[\\/]/,
                     name: 'vendors',
-                    chunks: 'all',
+                    minChunks: Infinity,
                 },
             },
         },

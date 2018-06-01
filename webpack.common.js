@@ -6,6 +6,15 @@ const webpack = require('webpack');
 module.exports = {
     entry: {
         index: './src/index.js',
+        vendors: [
+            'semantic-ui-react',
+            'semantic-ui-css',
+            'lodash',
+            'react',
+            'react-redux',
+            'react-dom',
+            'react-router-dom',
+        ],
     },
     resolve: {
         extensions: [
