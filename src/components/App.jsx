@@ -1,5 +1,7 @@
 import React from 'react';
-import { Router, Route, Switch } from 'react-router-dom';
+import Router from 'react-router-dom/Router';
+import Route from 'react-router-dom/Route';
+import Switch from 'react-router-dom/Switch';
 import createHistory from 'history/createBrowserHistory';
 
 import About from './About';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from 'semantic-ui-react';
+import Button from 'semantic-ui-react/dist/es/elements/Button';
 
 class SemanticUI extends React.Component {
     render () {
